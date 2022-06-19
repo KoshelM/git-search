@@ -1,5 +1,6 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import store from './store'
+import { axiosSetup } from './axios-setup'
 
-createApp(App).use(store).mount('#app')
+axiosSetup()
+createApp(App).mount('#app')
